@@ -1,85 +1,329 @@
-BCG-Data-Science-Advanced-Analytics-Virtual-Experience-Program
-image
+# BCG Data Science & Advanced Analytics Virtual Experience Program
 
-Background
-Your client is PowerCo, a major gas and electricity utility company that supplies to corporate, SME (small and medium enterprise) and residential customers. The power liberalization of the energy market in Europe has led to significant customer churn, especially in the SME segment. They have partnered with BCG to help diagnose and drive the source of churning SME customers.
+## Executive Summary
 
-A fair hypothesis is that price changes affect customer churn. Therefore, it is helpful to know which customers are more likely to churn at their current price, for which a good predictive model could be useful.
+This project represents a comprehensive data science initiative undertaken as part of the BCG X Virtual Experience Program. The analysis focuses on customer churn prediction for PowerCo, a leading European energy utility provider facing significant customer attrition in the SME segment following market deregulation.
 
-Moreover, for those customers that are at risk of churning, a discount might incentivise them to stay with our client. The head of the SME division is considering a 20% discount as large enough to dissuade almost everyone from churning, especially those for whom price is the primary concern
+---
 
-Task 1: Business understanding and hypothesis testing
-Your first task is to understand what is going on with the client and think about how you would approach this problem and test the specific hypothesis.
+## Business Context
 
-You must formulate the hypothesis as a data science problem and lay out the major steps needed to test this hypothesis, focusing on the data you would need from the client as well as the analytical models you would use to test the hypothesis.
+### Client Overview
+**PowerCo** is a major gas and electricity utility provider serving three primary customer segments:
+- Corporate clients
+- Small and Medium Enterprises (SMEs)
+- Residential consumers
 
-If you are stuck:
+### Challenge
+The liberalization of Europe's energy market has triggered unprecedented customer churn, particularly within the SME segment. PowerCo has engaged BCG to identify the root causes of churn and develop data-driven retention strategies.
 
-What are the key factors for a customer deciding to stay with or switch providers?
-Data sources and fields that could be used to explore the contribution of various factors to a customer’s potential action
-What would a data frame of your choice look like — what should each column and row represent?
-What kind of exploratory analyses on the relevant fields can give more insights into churn behaviour?
-Task 2: Exploratory data analysis
-The BCG project team thinks that building a churn model to understand whether price sensitivity is the largest driver of churn has potential. The client has sent over some data which includes:
+### Core Hypothesis
+Customer churn is primarily driven by price sensitivity. By identifying at-risk customers and their price elasticity, PowerCo can implement targeted retention strategies before customers defect to competitors.
 
-Historical customer data: customer data such as usage, sign-up date, forecasted usage
-Historical pricing data: fixed and variable pricing data
-Churn indicator: whether or not each customer has churned For task 2, you need to:
-Perform some exploratory data analysis. Look into data types, data statistics, specific parameters, and variable distributions
-Verify the hypothesis of price sensitivity being correlated with churn
-Prepare a half-page summary of key findings and add some suggestions for data augmentation — which other data sources should the client provide you with and which open source datasets might be useful?
-Task 3 - Feature Engineering & Modelling
-The team now has a good understanding of the data and feels confident to use the data to further understand the business problem. The team now needs to brainstorm and build out features to uncover signals in the data that could inform the churn model.
+### Proposed Intervention
+The SME division leadership has proposed offering a 20% discount to high-risk customers as a retention mechanism, hypothesizing that this incentive will be sufficient to retain price-sensitive customers.
 
-Feature engineering is one of the keys to unlocking predictive insight through mathematical modeling. Based on the data that is available and was cleaned, identify what you think could be drivers of churn for our client and build those features to later use in your model.
+---
 
-First focus on building on top of the feature that your colleague has already investigated: “the difference between off-peak prices in December and January the preceding year”. After this, if you have time, feel free to get creative with making any other features that you feel are worthwhile.
+## Project Objectives
 
-Once you have a set of features, you must train a Random Forest classifier to predict customer churn and evaluate the performance of the model with suitable evaluation metrics. Be rigorous with your approach and give full justification for any decisions made by yourself as the intern data scientist.
+### Task 1: Business Understanding & Hypothesis Formulation
 
-Recall that the hypotheses under consideration is that churn is driven by the customers’ price sensitivities and that it would be possible to predict customers likely to churn using a predictive model.
+**Goal:** Transform the business problem into a structured data science framework and establish a rigorous testing methodology.
 
-If you’re eager to go the extra mile for the client, when you have a trained predictive model, remember to investigate the client’s proposed discounting strategy, with the head of the SME division suggesting that offering customers at high propensity to churn a 20% discount might be effective.
+**Critical Questions Addressed:**
+- What factors influence a customer's decision to remain with or leave their current provider?
+- Which data elements most effectively predict churn behavior?
+- How should we structure our analytical dataset for optimal model performance?
+- What exploratory techniques will yield the deepest insights into customer behavior?
 
-Build your models and test them while keeping in mind you would need data to prove/disprove the hypotheses, as well as to test the effect of a 20% discount on customers at high propensity to churn. Tasks to do Sub-Task 1
+**Deliverable:** Comprehensive analytical framework including data requirements, feature specifications, and modeling approach.
 
-Your colleague has done some work on engineering the features within the cleaned dataset and has calculated a feature which seems to have predictive power.
+---
 
-This feature is “the difference between off-peak prices in December and January the preceding year”.
+### Task 2: Exploratory Data Analysis (EDA)
 
-Sub-Task 2
+**Available Data Assets:**
+- **Customer Profile Data:** Usage patterns, registration dates, consumption forecasts
+- **Pricing Intelligence:** Fixed and variable rate structures, historical pricing
+- **Outcome Variable:** Binary churn indicator for each customer
 
-Now that you have a dataset of cleaned and engineered features, it is time to build a predictive model to see how well these features are able to predict a customer churning. It is your task to train a Random Forest classifier and to evaluate the results in an appropriate manner. We would also like you to document the advantages and disadvantages of using a Random Forest for this use case. It is up to you how to fulfill this task, but you may want to use the below points to guide your work:
+**Analytical Objectives:**
+1. Conduct comprehensive data profiling
+   - Assess data quality, types, and distributions
+   - Identify missing values and outliers
+   - Examine statistical properties of key variables
+2. Test the price sensitivity hypothesis through statistical analysis
+3. Synthesize findings into actionable insights
+4. Recommend additional data sources to enhance model performance
 
-Ensure you’re able to explain the performance of your model, where did the model underperform? Why did you choose the evaluation metrics that you used? Please elaborate on your choices. Document the advantages and disadvantages of using the Random Forest for this use case. Do you think that the model performance is satisfactory? Give justification for your answer. (Bonus) - Relate the model performance to the client's financial performance with the introduction of the discount proposition. How much money could a client save with the use of the model? What assumptions did you make to come to this conclusion?
+**Deliverable:** Executive summary (half-page) with key insights and data enhancement recommendations.
 
-How to solve this task: Sub-Task 1
+---
 
-♦ Think of ways to evaluate a feature against a label.
+### Task 3: Feature Engineering & Predictive Modeling
 
-♦ Think of ways to add new features which would complement the already existing ones.
+**Goal:** Develop robust predictive features and build a high-performance churn prediction model to validate the price sensitivity hypothesis.
 
-♦ Think of feature granularity.
+#### Phase 1: Feature Engineering
 
-♦ Remove unnecessary features.
+**Primary Feature:**
+- Leverage existing engineered feature: "Off-peak price differential between December and January (year-over-year)"
 
-Sub-Task 2
+**Feature Development Strategy:**
+- Engineer complementary features to capture diverse churn signals
+- Optimize feature granularity for maximum predictive power
+- Eliminate redundant or low-signal features
+- Create interaction terms and derived metrics
 
-♦ Is this problem best represented as classification or regression?
+**Guiding Principles:**
+- Establish clear feature-to-target relationships
+- Ensure features complement rather than duplicate existing signals
+- Balance feature complexity with interpretability
+- Maintain temporal validity to prevent data leakage
 
-♦ What kind of model performance do you think is appropriate?
+#### Phase 2: Model Development & Validation
 
-♦ Most importantly how would you measure such a performance?
+**Modeling Approach:**
+- Algorithm: Random Forest Classifier (ensemble learning method)
+- Evaluation: Multi-metric performance assessment
+- Validation: Rigorous cross-validation strategy
 
-♦ How would you tie business metrics such as profits or savings to the model performance?
+**Critical Considerations:**
+- Problem framing: Classification vs. regression trade-offs
+- Performance benchmarks: Establishing acceptable thresholds
+- Evaluation framework: Selecting metrics aligned with business objectives
+- Business impact quantification: Translating model performance into financial terms
 
-Task 4 - Findings & Recommendations
-The client wants a quick update on the progress of the project.
+**Required Deliverables:**
+1. **Performance Analysis:** Detailed examination of model strengths and weaknesses
+2. **Metric Justification:** Rationale for selected evaluation criteria
+3. **Algorithm Assessment:** Comprehensive advantages/disadvantages analysis of Random Forest for this use case
+4. **Performance Verdict:** Clear determination of model adequacy with supporting evidence
+5. **Financial Impact Analysis (Bonus):** 
+   - Quantification of potential cost savings from discount strategy
+   - ROI calculations for model deployment
+   - Documentation of underlying assumptions and sensitivities
 
-For task 4, develop an abstract slide synthesising all the findings from the project so far.
+---
 
-A few things to think about for this abstract include:
+### Task 4: Executive Presentation & Strategic Recommendations
 
-What is the most important number or metric to share with the client?
-How much detail should you go into, especially with the technical details of your work?
-What impact would the model have on the client’s bottom line? Always test what you write with the “so what” test
+**Objective:** Synthesize project findings into a compelling executive summary suitable for C-suite presentation.
+
+**Strategic Framework:**
+- **Key Metric Identification:** Determine the single most impactful finding
+- **Technical Depth Calibration:** Balance detail with executive accessibility
+- **Business Impact Articulation:** Quantify bottom-line financial implications
+- **Recommendation Validation:** Apply "so what?" test to ensure actionable insights
+
+**Deliverable:** Executive slide deck summarizing insights, model performance, and strategic recommendations.
+
+---
+
+## Repository Architecture
+```
+bcg-powerco-churn-analysis/
+│
+├── data/
+│   ├── raw/                          # Unmodified source data
+│   ├── interim/                      # Intermediate processing stages
+│   ├── processed/                    # Final cleaned datasets
+│   └── features/                     # Engineered feature sets
+│
+├── notebooks/
+│   ├── 01_data_exploration.ipynb     # Initial EDA and data profiling
+│   ├── 02_hypothesis_testing.ipynb   # Statistical validation
+│   ├── 03_feature_engineering.ipynb  # Feature creation and selection
+│   ├── 04_model_development.ipynb    # Training and hyperparameter tuning
+│   └── 05_model_evaluation.ipynb     # Performance analysis
+│
+├── src/
+│   ├── __init__.py
+│   ├── data/
+│   │   ├── data_loader.py           # Data ingestion utilities
+│   │   └── data_cleaner.py          # Preprocessing pipelines
+│   ├── features/
+│   │   ├── build_features.py        # Feature engineering functions
+│   │   └── feature_selector.py      # Feature selection methods
+│   ├── models/
+│   │   ├── train_model.py           # Model training pipeline
+│   │   ├── predict_model.py         # Inference functions
+│   │   └── evaluate_model.py        # Evaluation metrics
+│   └── visualization/
+│       └── visualize.py              # Plotting utilities
+│
+├── models/
+│   ├── random_forest_v1.pkl         # Serialized models
+│   └── feature_importance.csv       # Feature ranking
+│
+├── reports/
+│   ├── figures/                      # Generated visualizations
+│   ├── eda_summary.pdf              # EDA findings
+│   ├── model_performance.pdf        # Evaluation results
+│   └── executive_summary.pdf        # Final presentation
+│
+├── requirements.txt                  # Python dependencies
+├── README.md                         # Project documentation
+└── .gitignore                       # Git exclusions
+```
+
+---
+
+## Key Findings
+
+*[This section will be populated upon completion of analysis with:]*
+- *Primary drivers of customer churn*
+- *Validation/refutation of price sensitivity hypothesis*
+- *Model performance metrics and business impact*
+- *Strategic recommendations for retention strategy*
+
+---
+
+## Technical Stack
+
+**Core Technologies:**
+- **Python 3.8+** - Primary programming language
+- **Pandas** - Data manipulation and analysis
+- **NumPy** - Numerical computing
+- **Scikit-learn** - Machine learning and model evaluation
+- **Matplotlib & Seaborn** - Data visualization
+- **Jupyter Notebook** - Interactive development environment
+- **XGBoost** (optional) - Advanced gradient boosting
+
+**Additional Libraries:**
+- **Imbalanced-learn** - Handling class imbalance
+- **SHAP** - Model interpretability
+- **Statsmodels** - Statistical testing
+
+---
+
+## Installation & Execution
+
+### Prerequisites
+- Python 3.8 or higher
+- pip package manager
+- Git
+
+### Setup Instructions
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/[your-username]/bcg-powerco-churn-analysis.git
+cd bcg-powerco-churn-analysis
+```
+
+2. **Create virtual environment** (recommended)
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+4. **Launch Jupyter Notebook**
+```bash
+jupyter notebook
+```
+
+5. **Execute notebooks sequentially**
+   - Start with `01_data_exploration.ipynb`
+   - Progress through numbered notebooks in order
+
+---
+
+## Project Methodology
+
+### 1. Data Understanding & Preparation
+- Comprehensive data profiling and quality assessment
+- Missing value imputation strategies
+- Outlier detection and treatment
+- Feature encoding and transformation
+
+### 2. Exploratory Analysis
+- Univariate and multivariate analysis
+- Correlation analysis and feature relationships
+- Churn rate analysis across customer segments
+- Price sensitivity evaluation
+
+### 3. Feature Engineering
+- Domain-driven feature creation
+- Temporal feature extraction
+- Interaction term development
+- Feature selection and dimensionality reduction
+
+### 4. Model Development
+- Baseline model establishment
+- Random Forest implementation
+- Hyperparameter optimization
+- Cross-validation strategy
+
+### 5. Model Evaluation
+- Performance metric calculation (Accuracy, Precision, Recall, F1, AUC-ROC)
+- Confusion matrix analysis
+- Feature importance ranking
+- Business impact quantification
+
+---
+
+## Results & Business Impact
+
+*[To be completed - will include:]*
+- Model performance metrics
+- Feature importance rankings
+- Financial impact projections
+- Actionable retention strategies
+- Discount strategy effectiveness analysis
+
+---
+
+## Future Enhancements
+
+- Incorporate additional data sources (competitor pricing, market trends)
+- Experiment with advanced algorithms (XGBoost, Neural Networks)
+- Develop customer lifetime value (CLV) predictions
+- Build real-time churn prediction API
+- Create interactive dashboard for stakeholder monitoring
+
+---
+
+## Contributing
+
+This is an individual project completed as part of the BCG Virtual Experience Program. However, suggestions and feedback are welcome.
+
+---
+
+## License
+
+This project is for educational purposes as part of the BCG X Virtual Experience Program.
+
+---
+
+## Author
+
+**[Your Name]**  
+Data Science Enthusiast | [Your LinkedIn] | [Your Email]
+
+---
+
+## Acknowledgments
+
+- **BCG X** for providing the Virtual Experience Program framework
+- **PowerCo** (fictional client) for the business case scenario
+- **Forage** for hosting the virtual program platform
+
+---
+
+## Contact
+
+For questions or collaboration opportunities:
+- Email: [your.email@example.com]
+- LinkedIn: [Your LinkedIn Profile]
+- GitHub: [@your-username]
+
+---
+
+*Last Updated: [Current Date]*
