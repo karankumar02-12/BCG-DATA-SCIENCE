@@ -15,7 +15,9 @@ Hi PowerCo,
 
 I hope you're doing well.
 
-As discussed, our team is beginning to investigate the drivers behind customer churn, with a particular focus on the hypothesis that price sensitivity is a key factor. In order to thoroughly validate or disprove this idea, Estelle (our senior data scientist) and I have outlined the critical data points we'll need, along with the techniques we plan to use to uncover meaningful insights.
+As discussed, our team is beginning to investigate the drivers behind customer churn, with a particular focus on the hypothesis that price sensitivity is a key factor. 
+In order to thoroughly validate or disprove this idea, Estelle (our senior data scientist) and I have outlined the critical data points we'll need, along with the techniques 
+we plan to use to uncover meaningful insights.
 
 ---
 
@@ -88,7 +90,8 @@ Once we have the necessary data, we'll follow a structured 5-step process:
 
 ## Expected Outcomes
 
-> **Key Objective:** We believe that with the right data, we'll be able to either confirm or challenge the hypothesis that price is the main churn driver—and also identify any other significant contributing factors such as service quality, plan type, or communication gaps.
+> **Key Objective:** We believe that with the right data, we'll be able to either confirm or challenge the hypothesis that price is the main churn driver—and also identify any other significant 
+contributing factors such as service quality, plan type, or communication gaps.
 
 ---
 
