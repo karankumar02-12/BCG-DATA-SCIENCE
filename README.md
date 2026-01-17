@@ -121,53 +121,6 @@ The SME division leadership has proposed offering a 20% discount to high-risk cu
 
 ---
 
-## Repository Architecture
-```
-bcg-powerco-churn-analysis/
-│
-├── data/
-│   ├── raw/                          # Unmodified source data
-│   ├── interim/                      # Intermediate processing stages
-│   ├── processed/                    # Final cleaned datasets
-│   └── features/                     # Engineered feature sets
-│
-├── notebooks/
-│   ├── 01_data_exploration.ipynb     # Initial EDA and data profiling
-│   ├── 02_hypothesis_testing.ipynb   # Statistical validation
-│   ├── 03_feature_engineering.ipynb  # Feature creation and selection
-│   ├── 04_model_development.ipynb    # Training and hyperparameter tuning
-│   └── 05_model_evaluation.ipynb     # Performance analysis
-│
-├── src/
-│   ├── __init__.py
-│   ├── data/
-│   │   ├── data_loader.py           # Data ingestion utilities
-│   │   └── data_cleaner.py          # Preprocessing pipelines
-│   ├── features/
-│   │   ├── build_features.py        # Feature engineering functions
-│   │   └── feature_selector.py      # Feature selection methods
-│   ├── models/
-│   │   ├── train_model.py           # Model training pipeline
-│   │   ├── predict_model.py         # Inference functions
-│   │   └── evaluate_model.py        # Evaluation metrics
-│   └── visualization/
-│       └── visualize.py              # Plotting utilities
-│
-├── models/
-│   ├── random_forest_v1.pkl         # Serialized models
-│   └── feature_importance.csv       # Feature ranking
-│
-├── reports/
-│   ├── figures/                      # Generated visualizations
-│   ├── eda_summary.pdf              # EDA findings
-│   ├── model_performance.pdf        # Evaluation results
-│   └── executive_summary.pdf        # Final presentation
-│
-├── requirements.txt                  # Python dependencies
-├── README.md                         # Project documentation
-└── .gitignore                       # Git exclusions
-```
-
 ---
 
 ## Key Findings
@@ -179,59 +132,6 @@ bcg-powerco-churn-analysis/
 - *Strategic recommendations for retention strategy*
 
 ---
-
-## Technical Stack
-
-**Core Technologies:**
-- **Python 3.8+** - Primary programming language
-- **Pandas** - Data manipulation and analysis
-- **NumPy** - Numerical computing
-- **Scikit-learn** - Machine learning and model evaluation
-- **Matplotlib & Seaborn** - Data visualization
-- **Jupyter Notebook** - Interactive development environment
-- **XGBoost** (optional) - Advanced gradient boosting
-
-**Additional Libraries:**
-- **Imbalanced-learn** - Handling class imbalance
-- **SHAP** - Model interpretability
-- **Statsmodels** - Statistical testing
-
----
-
-## Installation & Execution
-
-### Prerequisites
-- Python 3.8 or higher
-- pip package manager
-- Git
-
-### Setup Instructions
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/[your-username]/bcg-powerco-churn-analysis.git
-cd bcg-powerco-churn-analysis
-```
-
-2. **Create virtual environment** (recommended)
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. **Install dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-4. **Launch Jupyter Notebook**
-```bash
-jupyter notebook
-```
-
-5. **Execute notebooks sequentially**
-   - Start with `01_data_exploration.ipynb`
-   - Progress through numbered notebooks in order
 
 ---
 
@@ -304,8 +204,8 @@ This project is for educational purposes as part of the BCG X Virtual Experience
 
 ## Author
 
-**[Your Name]**  
-Data Science Enthusiast | [Your LinkedIn] | [Your Email]
+**[Karan Kumar]**  
+Data Science Enthusiast
 
 ---
 
@@ -314,15 +214,6 @@ Data Science Enthusiast | [Your LinkedIn] | [Your Email]
 - **BCG X** for providing the Virtual Experience Program framework
 - **PowerCo** (fictional client) for the business case scenario
 - **Forage** for hosting the virtual program platform
-
----
-
-## Contact
-
-For questions or collaboration opportunities:
-- Email: [your.email@example.com]
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [@your-username]
 
 ---
 
