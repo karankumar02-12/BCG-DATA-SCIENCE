@@ -215,6 +215,4 @@ Data Science Enthusiast
 - **PowerCo** (fictional client) for the business case scenario
 - **Forage** for hosting the virtual program platform
 
----
 
-*Last Updated: [Current Date]*
